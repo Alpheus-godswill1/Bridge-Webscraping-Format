@@ -21,15 +21,20 @@ for product in Tags:
     DateOfReview = soup.find('span', '-prs').text
     DateAndReviewersName = soup.find('div', '-df -j-bet -i-ctr -gy5').text
     PurchaseStatus = soup.find('div', '-df -i-ctr -gn5 -fsh0').text
+    
+    
     # Create a dictionary to store the data for each product
     product_data = {
-        'Verified Purchase': VerifiedPurchases,
-        'Number Of Goods Purchased': NumbOfGoodsPurchased,
-        'Review Title': ReviewTitle,
-        'Customer Review': Reviews,
-        'Date of Review': DateOfReview,
-        'Date Of Review And Reviewer-Name': DateAndReviewersName,
-        'Purchase Status': PurchaseStatus
+        'Product Name': "",
+        'Product Brand': "",
+        'Product Price': "",
+        'Product Verified Ratings' : "",
+        'Verified Purchase': "",
+        'Number Of Item Purchased(Sales)': "",
+        'Review Title': "",
+        'Customer Review (Comment)': "",
+        'Date Of Review ': "",
+        'Purchase Status': ""
     }
 
     # Append the product data to the list
